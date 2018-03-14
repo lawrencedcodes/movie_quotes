@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Black Quotes</title>
+	<style>
+		body {
+			background-image: url("blackmov.jpg");
+		}
+		button {
+			height: 100px;
+			border-radius: 35%;
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			text-align: center;
+			margin: 0 auto;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+		}
+		button:hover {
+			background-color: black;
+		}
+		p {
+			width: 75%;
+			font-size: 35px;
+			background: white;
+		}
+	</style>
+</head>
+<body>
+	    <button onclick="myFunc()">Get a black quote!</button>
+    	<div id="ans"></div>
+	<script>
+  var quotes = ["-----------You said don't shoot him...so I choked him - devil in a blue dress     ",
+  "Wakanda Forever",
+  "------------        Who dat nigga on that horse? - django     ",
+  "-------------         That's too much power for one black man to have  - malcom x   ",
+  "----------------        Lemme get one. no no, one rib. I sure am hungry - im gonna get you sucka     ",
+  "------------         His Momma named him Clay, I’m gonna call him Clay - coming to america     ",
+  "--------------        Sit yo 5 dollar a&& down before I make change - new jack city     ",
+  "- -----------       So now you gonna shoot me in my Pinky toe!! --harlem nights     ",
+  "- -----------       I said, can I get you anything else?  -love jones     ",
+  "- -----------       All my life I had to fight - color purple     ",
+  "- -----------       Bye Felicia - friday      ",
+  "-------------       You sholllll is ugly!",
+  "-------------       I'm a crack-crack-crack-crack-CRACKhead!  -jungle fever",
+  "- -----------       What's all these beads and braids and thangs - crooklyn     ",
+  ""
+  ];
+function myFunc() {
+  var para = document.createElement("P");
+  var t = document.createTextNode(quotes[Math.floor(Math.random()*14)]);
+  para.appendChild(t);
+  document.body.appendChild(para);
+  if (t==="Wakanda Forever"){
+  	document.getElementById("ans").innerHTML = "Black Panther";
+  }
+  }
+	</script>
+</body>
+</html>
